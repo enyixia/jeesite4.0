@@ -1,9 +1,9 @@
-<% layout('/layouts/default.html', {title: 'app_test管理', libs: ['dataGrid']}){ %>
+<% layout('/layouts/default.html', {title: '用户管理', libs: ['dataGrid']}){ %>
 <div class="main-content">
 	<div class="box box-main">
 		<div class="box-header">
 			<div class="box-title">
-				<i class="fa fa-list-alt"></i> ${text('app_test管理')}
+				<i class="fa fa-list-alt"></i> ${text('用户管理')}
 			</div>
 			<div class="box-tools pull-right">
 				<a href="#" class="btn btn-default" id="btnSearch" title="${text('查询')}"><i class="fa fa-filter"></i> ${text('查询')}</a>
@@ -25,6 +25,10 @@
 					<label class="control-label">description：</label>
 					<div class="control-inline">
 						<#form:input path="description" maxlength="255" class="form-control width-120"/>
+
+                        <!--<#form:ueditor name="description" maxlength="10000" height="200" class="required"
+                                simpleToolbars="false" readonly="false" outline="false"/>-->
+
 					</div>
 				</div>
 				<div class="form-group">

@@ -59,7 +59,7 @@ public class AppTestController extends BaseController {
 	@RequestMapping(value = "listData")
 	@ResponseBody
 	public Page<AppTest> listData(AppTest appTest, HttpServletRequest request, HttpServletResponse response) {
-		Page<AppTest> page = appTestService.findPage(new Page<AppTest>(request, response), appTest); 
+		Page<AppTest> page = appTestService.findPage(new Page<AppTest>(request, response), appTest);
 		return page;
 	}
 
